@@ -31,7 +31,8 @@ function Login() {
     
 
   return (
-    <div >
+    <div id='container'>
+    <div>
         <form>
             <h1>Log in for <b>2306</b> I'd</h1>
             <div>
@@ -75,6 +76,7 @@ function Login() {
         </form>
         <h2 id='info'>Sign in<b>'</b> or create an account<b>?</b></h2>
         
+    </div>
     </div>
   )
 }
