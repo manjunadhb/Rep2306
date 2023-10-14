@@ -1,29 +1,28 @@
 import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Login() {
 
   
-    let firstNameInputRef = useRef();
-    let lastNameInputRef = useRef();
-    let emailInputRef = useRef();
-    let passwordNameInputRef = useRef();
-    let countryInputRef = useRef();
-    let numberInputRef = useRef();
-
+    let nameInputRef = useRef();
+    let familyNameInputRef = useRef();
+    let emailIdInputRef = useRef();
+    let pwInputRef = useRef();
+    let phoneNumberInputRef = useRef();
+     let navigate = useNavigate();
 
     let createAccount = ()=>{
 
-        if( firstNameInputRef.current.check == "" && 
-        lastNameInputRef.current.check == "" &&
-        emailInputRef.current.check == ""&&
-        passwordNameInputRef.current.check == ""&&
-        countryInputRef.current.check== ""&&
-        numberInputRef.current.check ==""
+        if( nameInputRef.current.value ==0 && 
+            familyNameInputRef.current.value ==0 &&
+        emailIdInputRef.current.value ==0 &&
+        pwInputRef.current.value ==0 &&
+        phoneNumberInputRef.current.value ==0 
         ){
-            alert("please fill * require");
-          }else{
-            alert("Successfully created account");
+        alert("please fill * require");
+        }else{
+           
+         navigate("/Home")
         }
 
     };
@@ -34,27 +33,27 @@ function Login() {
     <div id='container'>
     <div>
         <form>
-            <h1>Log in for <b>2306</b> I'd</h1>
+            <h1>Log in for <b>2306</b> I'D</h1>
             <div>
                 <label><strong>First name</strong><b>*</b></label>
-                <input ref={firstNameInputRef}></input>
+                <input ref={nameInputRef}></input>
             </div>
             <div>
                 <label><strong>Last name</strong><b>*</b></label>
-                <input ref={lastNameInputRef}></input>
+                <input ref={familyNameInputRef}></input>
             </div>
            
             <div>
                 <label><strong>Email I'd</strong><b>*</b></label>
-                <input ref={emailInputRef}></input>
+                <input ref={emailIdInputRef}></input>
             </div>
             <div>
                 <label><strong>Password</strong><b>*</b></label>
-                <input ref={passwordNameInputRef}  type='password'></input>
+                <input ref={pwInputRef}  type='password'></input>
             </div>
             <div>
                 <label><strong>Contact number</strong><b>*</b></label>
-                <input ref={numberInputRef} type='number'></input>
+                <input ref={phoneNumberInputRef} type='number'></input>
 
             </div>
             <div>

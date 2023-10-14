@@ -1,24 +1,54 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 function Signup() {
+
+let firstNameInputRef = useRef();
+let lastNameInputRef = useRef();
+let countryInputRef = useRef();
+let emailInputRef = useRef();
+let dateInputRef = useRef();
+let passwordInputRef = useRef();
+let confirmPasswordInputRef = useRef();
+let numberInputRef = useRef();
+
+let validateLogin = ()=>{
+
+   if(firstNameInputRef.current.value == 0 &&
+    lastNameInputRef.current.value ==0 &&
+    countryInputRef.current.value ==0 &&
+    dateInputRef.current.value ==0 &&
+    passwordInputRef.current.value ==0 &&
+    confirmPasswordInputRef.current.value ==0 &&
+    numberInputRef.current.value ==0 
+    ){
+         
+        alert("please fill * require"); 
+   }else{
+     alert("Successfully created your account"); 
+   }
+
+};
+
+
   return (
+    <div id='head'>
     <div>
-        <form>
+        <form id='signupForm'>
 
 <h2><strong>Create Your <b>2306</b> I'D</strong></h2>
        <h4><b>*</b> indicates a required field.</h4>
            <div>
                <label><strong>First name<b>*</b></strong></label>
-               <input ></input>
+               <input ref={firstNameInputRef}></input>
            </div>
            <div>
                <label><strong>Last name<b>*</b></strong></label>
-               <input ></input>
+               <input ref={lastNameInputRef}></input>
            </div>
            <div>
                <label><strong>Country<b>*</b></strong></label>
-               <select >
+               <select ref={countryInputRef}>
                <option >select..</option>
                    <option value="Aland lslands">Aland lslands</option>
                    <option value=" Belize">Belize</option>
@@ -31,34 +61,38 @@ function Signup() {
            </div>
         <div>
                 <label><strong>Date of birth<b>*</b></strong></label>
-                <input  id='date' type='date'></input>
+                <input  ref={dateInputRef} id='date' type='date'></input>
             </div>
             <div>
                 <label><strong>Email i'd<b>*</b></strong></label>
-                <input  type='email'></input>
+                <input ref={emailInputRef} type='email'></input>
             </div>
             <div>
                 <label><strong>Password<b>*</b></strong></label>
-                <input  type='password'></input>
+                <input ref={passwordInputRef} type='password'></input>
             </div>
             <div>
                 <label><strong> confirm password<b>*</b></strong></label>
-                <input  type='password'></input>
+                <input ref={confirmPasswordInputRef} type='password'></input>
             </div>
             <div>
                 <label><strong>Phone number<b>*</b></strong></label>
-                <input type='number'></input>
+                <input ref={numberInputRef} type='number'></input>
                 </div>
                 <div >
                 <input  type='checkbox'></input>
                 <label id='captcha'>I agree to the Terms of Service</label>
             </div>
-            <button type='button'>Sign up</button>
+            <button type='button' onClick={()=>{
+                  
+                  validateLogin();
+            }}>Sign up</button>
             <h3>Have an account? </h3>
-            <Link id='login' to="/">Log in now</Link>
+            <Link id='login' to="/">Login now </Link>
             <br></br>
-            <br></br>
+            
             </form>
+    </div>
     </div>
   )
 }

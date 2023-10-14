@@ -7,17 +7,25 @@ b{
 }
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-image: url("https://images.alphacoders.com/865/865987.jpg");
+}
+#container{
+  background-image: url("https://images.alphacoders.com/865/865987.jpg");
 background-size:cover ;
+height: 643.5px;
 }
 
+#head{
+background-image: url("https://media.istockphoto.com/id/1295843101/photo/road-through-wintery-landscape-aerial-view.jpg?s=2048x2048&w=is&k=20&c=MUFBOgs64qEK5vdvghBmlJG6xvc2mi6EnNvfEuTT184=");
+background-size:cover ;
+height: 643.5px;
+}
 
 form{
   display: inline-block;
   /* border: 2px solid black; */
   border-radius: 1%;
   margin-left: 35%;
-  margin-top: 5%;
+  margin-top: 3%;
   background-color: white;
 }
 
@@ -38,6 +46,14 @@ button{
 button:hover{
   background-color: white;
   color: black;
+}
+#signupForm{
+  margin-left:37% ;
+  
+}
+input:hover{
+  background-color: black;
+  color: white;
 }
 #info{
   color: white;
