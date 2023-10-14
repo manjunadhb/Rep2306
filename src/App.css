@@ -11,6 +11,7 @@ background-image: url("https://images.alphacoders.com/865/865987.jpg");
 background-size:cover ;
 }
 
+
 form{
   display: inline-block;
   /* border: 2px solid black; */
@@ -40,7 +41,19 @@ button:hover{
 }
 #info{
   color: white;
-  margin-left: -53%;
+  margin-left: -52%;
   margin-top: -7%;
   
 }
+
+
+select ,#date{
+  width: 57%;
+}
+a{
+  text-decoration: none;
+}
+#signup ,#login{
+  color: rgb(0, 157, 255);
+  font-size: 1.5rem;
+ }
