@@ -12,18 +12,15 @@ let passwordInputRef = useRef();
 let confirmPasswordInputRef = useRef();
 let numberInputRef = useRef();
 
-let validateLogin = ()=>{
+let createAccount = ()=>{
 
    if(firstNameInputRef.current.value == 0 &&
-    lastNameInputRef.current.value ==0 &&
-    countryInputRef.current.value ==0 &&
-    dateInputRef.current.value ==0 &&
-    passwordInputRef.current.value ==0 &&
-    confirmPasswordInputRef.current.value ==0 &&
+    lastNameInputRef.current.value == 0 &&
+    passwordInputRef.current.value == 0 &&
+    confirmPasswordInputRef.current.value == 0 &&
     numberInputRef.current.value ==0 
     ){
-         
-        alert("please fill * require"); 
+         alert("please fill * require"); 
    }else{
      alert("Successfully created your account"); 
    }
@@ -84,10 +81,10 @@ let validateLogin = ()=>{
                 <label id='captcha'>I agree to the Terms of Service</label>
             </div>
             <button type='button' onClick={()=>{
-                  
-                  validateLogin();
-            }}>Sign up</button>
-            <h3>Have an account? </h3>
+            createAccount();
+           
+           }}>Sign up</button>
+            <h3>Already have an account? </h3>
             <Link id='login' to="/">Login now </Link>
             <br></br>
             

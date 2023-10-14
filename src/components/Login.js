@@ -11,7 +11,7 @@ function Login() {
     let phoneNumberInputRef = useRef();
      let navigate = useNavigate();
 
-    let createAccount = ()=>{
+    let validateLogin = ()=>{
 
         if( nameInputRef.current.value ==0 && 
             familyNameInputRef.current.value ==0 &&
@@ -63,7 +63,7 @@ function Login() {
                 <div>
                    
                     <button type='button' onClick={()=>{
-                   createAccount();
+                   validateLogin();
 
                     }}>Continue</button>
 

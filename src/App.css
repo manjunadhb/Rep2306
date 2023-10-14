@@ -61,8 +61,6 @@ input:hover{
   margin-top: -7%;
   
 }
-
-
 select ,#date{
   width: 57%;
 }
@@ -73,3 +71,22 @@ a{
   color: rgb(0, 157, 255);
   font-size: 1.5rem;
  }
+ #homeDiv{
+background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+background-size:cover ;
+height: 650px;
+ }
+ #about{
+  font-size: 3rem;
+  margin-top: 20%;
+  color: white;
+ }
+ #signout{
+  color: red;
+  font-size: 2rem;
+  margin-left: 89%;
+ }
+ #signout:hover{
+ color: green;
+ }
+ 
