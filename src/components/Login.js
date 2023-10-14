@@ -21,7 +21,6 @@ function Login() {
         ){
         alert("please fill * require");
         }else{
-           
          navigate("/Home")
         }
 
