@@ -1,13 +1,10 @@
-
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-
-  <h1>rep2306</h1>
-      <h1>Added by Jayasurya</h1>
-        
+      <p>Cloned Original Repositoy and added name of the User.</p>
+      <h1>Ratnakar Baalkundhi</h1>
     </div>
   );
 }
