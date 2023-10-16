@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+form{
+  display: inline-block;
+  background-color: lightseagreen;
+  border-radius: 2%;
+  margin-top: 10%;
+
+}
+form label{
+  display: inline-block;
+  width: 100px;
+
+}
+form div{
+  margin: 15px;
+}
+b{
+  color: red;
+}
+button{
+  font-size: large;
+  background-color: green;
+  color: white;
+  border-radius: 2%;
+  box-shadow: 3px 3px 6px black;
+}
