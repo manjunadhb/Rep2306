@@ -1,1 +1,92 @@
+.App {
+  text-align: center;
+}
 
+b{
+  color: red;
+}
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#container{
+  background-image: url("https://images.alphacoders.com/865/865987.jpg");
+background-size:cover ;
+height: 643.5px;
+}
+
+#head{
+background-image: url("https://media.istockphoto.com/id/1295843101/photo/road-through-wintery-landscape-aerial-view.jpg?s=2048x2048&w=is&k=20&c=MUFBOgs64qEK5vdvghBmlJG6xvc2mi6EnNvfEuTT184=");
+background-size:cover ;
+height: 643.5px;
+}
+
+form{
+  display: inline-block;
+  /* border: 2px solid black; */
+  border-radius: 1%;
+  margin-left: 35%;
+  margin-top: 3%;
+  background-color: white;
+}
+
+form label{
+  display: inline-block;
+  width: 120px;
+}
+form div{
+  margin: 15px;
+}
+button{
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 2%;
+}
+button:hover{
+  background-color: white;
+  color: black;
+}
+#signupForm{
+  margin-left:37% ;
+  
+}
+input:hover{
+  background-color: black;
+  color: white;
+}
+#info{
+  color: white;
+  margin-left: -52%;
+  margin-top: -7%;
+  
+}
+select ,#date{
+  width: 57%;
+}
+a{
+  text-decoration: none;
+}
+#signup ,#login{
+  color: rgb(0, 157, 255);
+  font-size: 1.5rem;
+ }
+ #aboutInfo{
+  font-size: 3rem;
+  margin-top: 20%;
+  color: white;
+ }
+ #signout{
+  color: red;
+  font-size: 2rem;
+  margin-left: 89%;
+ }
+ #signout:hover{
+ color: green;
+ }
+ #homeDiv{
+  background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+  background-size:cover ;
+  height: 650px;
+   }
+ 
