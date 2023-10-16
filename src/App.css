@@ -19,10 +19,11 @@ form div{
 b{
   color: red;
 }
-button{
+button {
   font-size: large;
   background-color: green;
   color: white;
   border-radius: 2%;
-  box-shadow: 3px 3px 6px black;
+ 
 }
+
