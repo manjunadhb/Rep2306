@@ -22,7 +22,7 @@ function App() {
        <label>Password <b>*</b> </label>
         <input></input>
       </div>
-      <button type="button"> Login</button>
+      <button type="button">Login</button>
     </form>
       
     </div>
